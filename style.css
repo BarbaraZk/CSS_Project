@@ -125,12 +125,19 @@ section.small-inf{
   padding: 10px 0;
 }
 
+section.small-inf.about-me{
+  height: 600px;
+}
+
 section.small-inf h2{
   font-family: "Roboto-extra-bold", sans-serif;
   flex-basis: 100%;
-  font-size: 36px;
+  font-size: 34px;
   text-align: center;
   margin-top: 10px;
+}
+section.small-inf h2.about-me{
+  font-size: 28px;
 }
 
 section.small-inf .images{
@@ -139,12 +146,22 @@ section.small-inf .images{
   width: 85%;
 }
 
+section.small-inf .images.about-me{
+  flex-wrap: wrap;
+  width: 95%;
+}
+
 section.small-inf .images .small-image{
   width:175px;
   height: 175px;
   border: 1px black solid;
   border-radius: 5px;
   margin-top: 5px;
+}
+
+section.small-inf .images .small-image.about-me{
+  width:400px;
+  height: 220px; 
 }
 
 section.small-inf figcaption{
@@ -215,7 +232,7 @@ footer {
   }
 }
 
-@media(max-width:979px){
+@media(max-width:983px){
   section.hero h1{
     font-size: 36px;
   }
@@ -228,12 +245,19 @@ footer {
   section.small-inf{
     height: 300px;
   }
+  section.small-inf.about-me{
+    height: 100%;
+  }
   section.small-inf .images{
     width: 95%;
   }
   section.small-inf .images .small-image{
     width:140px;
     height:140px;
+  }
+  section.small-inf .images .small-image.about-me{
+    width:400px;
+    height:220px;
   }
   section.testimonial{
     height:250px;
@@ -301,6 +325,7 @@ footer {
     font-size: 25px;
     margin-bottom: 30px;
   }
+ 
   section.small-inf .images {
     flex-wrap: wrap;
     justify-content: space-around;
@@ -334,12 +359,27 @@ footer {
   section.hero .left-container{
     padding: 10px 0;
   }
+  section.hero .left-container.about-me{
+   margin-top: 0;
+  }
+  section.hero .right-container .main-image.about-me{
+    padding: 15px;
+   }
   section.hero h1{
     font-size: 25px;
+  }
+  section.hero h1.about-me{
+    font-size: 18px;
+  }
+  section.hero p.about-me{
+    font-size: 13px;
   }
   header nav ul li a{
     font-size: 12px;
     padding-left: 10px; 
+  } 
+  button.about-me{
+    margin-top: 5px;
   }
   section.small-inf{
   height: 450px;
@@ -347,6 +387,10 @@ footer {
   section.small-inf .images .small-image{
     width:140px;
     height:140px;
+  }
+  section.small-inf .images .small-image.about-me{
+    width:300px;
+    height:150px;
   }
   section.testimonial p {
    padding-top:5px;
