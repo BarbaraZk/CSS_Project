@@ -27,6 +27,7 @@
   align-items: center;
 }
 
+
 header, header.logo{
   display: flex;
   width: 100%; 
@@ -225,6 +226,7 @@ footer {
   color: white;
   background-color: #1F2937;
 }
+
 
 @media(min-width:1700px){
   .wrapper{
