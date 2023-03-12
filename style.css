@@ -2,47 +2,41 @@
   font-family: 'Roboto-regular';
   src: url(fonts/Roboto/Roboto-Regular.ttf) format('truetype');
 }
+
 @font-face {
   font-family: 'Roboto-extra-bold';
   src: url(fonts/Roboto/Roboto-Bold.ttf) format('truetype');
 }
+
 @font-face {
   font-family: 'Roboto-light-italic';
   src: url(fonts/Roboto/Roboto-LightItalic.ttf) format('truetype');
 }
 
-*{
+* {
   font-family: "Roboto-regular", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
-.wrapper{
-  display:flex;
-  flex-wrap: wrap;
-  width: 90%;
-  justify-content: center;
-  margin: 0 auto;
-  align-items: center;
-}
-
-header, header.logo{
+header,
+header.logo {
   display: flex;
-  width: 100%; 
-  background-color: #1F2937; 
-  padding: 8px 50px; 
+  width: 100%;
+  background-color: #1F2937;
+  padding: 15px 150px;
 }
 
-header .logo{  
+header .logo {
   flex-basis: 35%;
-  font-size: 24px;
+  font-size: 30px;
   align-items: center;
   text-transform: uppercase;
   color: #F9FAF8;
 }
 
-header nav{
+header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -51,47 +45,116 @@ header nav{
 
 header nav ul {
   display: flex;
-  list-style:none;
+  list-style: none;
 }
 
-header nav ul li a{
-  font-size: 18px;
+header nav ul li a {
+  font-size: 22px;
   text-decoration: none;
   padding-left: 20px;
   color: #E5E7EB
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
   font-size: 21px;
   color: white;
 }
 
-section.hero{
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+section.hero {
   display: flex;
   flex-basis: 100%;
   justify-content: center;
-  background-color: #1F2937;  
+  background-color: #1F2937;
   color: #E5E7EB;
-  padding: 10px 50px 50px 50px;
+  padding: 10px 150px 30px 150px;
 }
 
-section.hero .left-container{
+section.hero .left-container {
   display: flex;
+  font-size: 20px;
   flex-basis: 50%;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 40px;
-  height: 275px;
+  height: 300px;
   padding-right: 40px;
 }
 
-section.hero h1{
+section.hero .left-container.travel {
+  justify-content: space-around;
+  flex-basis: 40%;
+}
+
+section.hero .right-container.travel {
+  flex-basis: 60%;
+}
+
+section.hero h1.about-me {
+  font-size: 30px;
+}
+
+section.hero h1 {
   font-size: 48px;
-  font-family:"Roboto-extra-bold", sans-serif;
+  font-family: "Roboto-extra-bold", sans-serif;
   color: #F9FAF8;
 }
 
-button{
+.travel-tips {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: url(images/image2.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+}
+
+.travel-tips h1 {
+  text-align: center;
+  font-size: 34px;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.travel-tips h3 {
+  text-align: center;
+  margin: 25px 0;
+  text-transform: uppercase;
+  font-family: "Roboto-extra-bold", sans-serif;
+  font-size: 27px;
+  color: black;
+}
+
+.travel-tips .tips {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  font-size: 22px;
+  margin: 30px;
+  color: white;
+}
+
+.travel-tips .tipLink {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+.instagram {
+  text-decoration: none;
+  color: rgb(0, 170, 255);
+}
+
+button {
   display: block;
   color: white;
   background-color: rgb(137, 162, 218);
@@ -102,88 +165,93 @@ button{
   width: 150px;
 }
 
-section.hero .right-container{
+section.hero .right-container {
   display: flex;
   flex-basis: 50%;
-  height: 275px;
-  justify-content: center;
-  margin-top: 40px;  
+  max-height: 500px;
+  justify-content: end;
+  margin-top: 40px;
 }
 
-section.hero .right-container .main-image{
+section.hero .right-container .main-image {
   display: block;
-  width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
-section.small-inf{
+section.hero .right-container .travel {
+  max-width: 90%;
+}
+
+
+section.small-inf {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100%;
   justify-content: center;
-  height: 350px;
   padding: 10px 0;
 }
 
-section.small-inf.about-me{
-  height: 600px;
-}
-
-section.small-inf h2{
+section.small-inf h2 {
   font-family: "Roboto-extra-bold", sans-serif;
   flex-basis: 100%;
   font-size: 34px;
   text-align: center;
-  margin-top: 10px;
-}
-section.small-inf h2.about-me{
-  font-size: 28px;
+  margin: 15px;
 }
 
-section.small-inf .images{
+section.small-inf h2.about-me {
+  font-size: 34px;
+}
+
+section.small-inf .images {
   display: flex;
   justify-content: space-around;
   width: 85%;
 }
 
-section.small-inf .images.about-me{
+section.small-inf .images.about-me {
   flex-wrap: wrap;
   width: 95%;
 }
 
-section.small-inf .images .small-image{
-  width:175px;
-  height: 175px;
+section.small-inf .images .small-image {
+  width: 200px;
+  height: 200px;
   border: 1px black solid;
   border-radius: 5px;
-  margin-top: 5px;
 }
 
-section.small-inf .images .small-image.about-me{
-  width:400px;
-  height: 200px; 
+figure.about-me {
+  width: 500px;
 }
 
-section.small-inf figcaption{
+section.small-inf .images .small-image.about-me {
+  width: 500px;
+  height: auto;
+  margin: 10px 0 5px 0;
+}
+
+section.small-inf figcaption {
   text-align: center;
 }
 
-section.testimonial{
+section.testimonial {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-basis: 100%;
   height: 350px;
-  background-color:#E5E7EB;
+  background-color: #E5E7EB;
 }
 
-section.testimonial p{
+section.testimonial p {
   font-family: "Roboto-light-italic";
   font-size: 36px;
-  padding: 0 80px;
+  padding: 0 150px;
 }
 
-section.testimonial p cite{
+section.testimonial p cite {
   display: block;
   font-weight: bold;
   font-size: 20px;
@@ -191,28 +259,28 @@ section.testimonial p cite{
   margin: 15px;
 }
 
-section.call-action{
+section.call-action {
   display: flex;
-  flex-basis:70%;
+  width: 50%;
   align-items: center;
   justify-content: space-around;
-  margin:50px 0;
+  margin: 50px 0;
   height: 60px;
-  background-color:rgb(137, 162, 218) ;
+  background-color: rgb(137, 162, 218);
   border-radius: 5px;
   color: white;
 }
 
-section.call-action .ending-message h4{
+section.call-action .ending-message h4 {
   font-weight: bold;
 }
 
-section.call-action  .ending-message p{
+section.call-action .ending-message p {
   font-size: 11px;
 }
 
-section.call-action  button{
-  border: 1px solid white; 
+section.call-action button {
+  border: 1px solid white;
 }
 
 footer {
@@ -226,197 +294,362 @@ footer {
   background-color: #1F2937;
 }
 
-@media(min-width:1700px){
-  .wrapper{
-    width: 70%;
+@media(max-width:1700px) {
+
+  header,
+  header.logo {
+    padding: 15px 50px;
+  }
+
+  section.hero {
+    padding: 10px 50px 30px 50px;
+  }
+
+  section.hero p.about-me {
+    font-size: 17px;
+  }
+
+  .travel-tips .tips {
+    width: 80%;
   }
 }
 
-@media(max-width:983px){
-  section.hero h1{
+@media(max-width:983px) {
+  section.hero h1 {
     font-size: 36px;
   }
-  section.hero h1.about-me{
+
+  section.hero h1.about-me {
     font-size: 20px;
   }
-  section.hero p.about-me{
+
+  section.hero p.about-me {
     font-size: 13px;
   }
-  header nav ul li a{
+
+  header nav ul li a {
     font-size: 15px;
-  } 
-  section.hero .left-container,section.hero .right-container {
+  }
+
+  section.hero .left-container,
+  section.hero .right-container {
     margin-top: 15px;
     height: 240px;
     padding: 10px 0;
   }
-  section.small-inf{
+
+  .left-container.travel p {
+    font-size: 15px;
+  }
+
+  section.small-inf {
     height: 300px;
   }
-  section.small-inf.about-me{
+
+  section.small-inf.about-me {
     height: 100%;
   }
-  section.small-inf .images{
+
+  section.small-inf .images {
     width: 95%;
   }
-  section.small-inf .images .small-image{
-    width:140px;
-    height:140px;
+
+  section.small-inf .images .small-image {
+    width: 140px;
+    height: 140px;
   }
-  section.small-inf .images .small-image.about-me{
-    width:400px;
-    height:220px;
+
+  section.small-inf .images .small-image.about-me {
+    width: 400px;
+    height: 220px;
   }
-  section.testimonial{
-    height:250px;
+
+  figure.about-me {
+    width: 400px;
   }
-  section.testimonial p{
-    font-size: 22px;  
+
+  section.testimonial {
+    height: 250px;
+  }
+
+  section.testimonial p {
+    font-size: 22px;
   }
 }
-@media(max-width:768px){
-  header{
+
+@media(max-width:768px) {
+  header {
     padding: 10px 20px;
-   }
-  section.hero{
+  }
+
+  section.hero {
     padding: 10px 20px 20px 20px;
   }
-  section.hero{
+
+  section.hero {
     flex-wrap: wrap;
   }
-  section.hero .left-container{
+
+  section.hero .left-container {
     align-items: center;
     flex-basis: 100%;
-    height:200px;
+    height: 200px;
     padding-right: 0;
   }
-  section.hero .left-container p{
+
+  section.hero .left-container.travel {
+    align-items: center;
+    flex-basis: 100%;
+    height: 200px;
+    padding-right: 0;
+  }
+
+  section.hero .left-container p {
     text-align: center;
   }
-  section.hero .right-container{
-    flex-basis: 100%; 
+
+  section.hero .right-container {
+    flex-basis: 100%;
+    justify-content: center;
   }
-  section.hero .left-container.about-me{
-    flex-basis: 90%; 
+
+  section.hero .right-container.travel {
+    flex-basis: 100%;
+    justify-content: center;
   }
-  section.hero .right-container.about-me{
-    flex-basis: 90%; 
+
+  section.hero .left-container.about-me {
+    flex-basis: 90%;
   }
-  section.small-inf h2{
+
+  section.hero .right-container.about-me {
+    flex-basis: 90%;
+  }
+
+  section.small-inf h2 {
     font-size: 28px;
   }
-  section.small-inf .images{
+
+  section.small-inf .images {
     width: 100%;
   }
-  section.small-inf .images .small-image{
-    width:130px;
-    height:130px;
+
+  section.small-inf .images .small-image {
+    width: 130px;
+    height: 130px;
   }
-  section.testimonial{
-    height:180px;
+
+  section.testimonial {
+    height: 180px;
   }
-  section.testimonial p{
+
+  section.testimonial p {
     font-size: 20px;
     margin: 20px;
     padding: 5px;
   }
-  section.testimonial p cite{
-    font-size: 15px; 
+
+  section.testimonial p cite {
+    font-size: 15px;
   }
-  section.call-action{
-    flex-basis:85%; 
+
+  section.call-action {
+    flex-basis: 85%;
   }
 }
 
-@media(max-width:599px){
-  .wrapper{
+@media(max-width:599px) {
+  .wrapper {
     width: 100%;
   }
-  section.hero .right-container.about-me{
-    flex-basis: 100%; 
+
+  section.hero .right-container.about-me {
+    flex-basis: 100%;
   }
-  section.hero .left-container.about-me{
-    flex-basis: 100%; 
+
+  section.hero .left-container.about-me {
+    flex-basis: 100%;
   }
-  section.small-inf{
+
+  section.small-inf {
     height: 580px;
   }
-  section.small-inf h2{
+
+  section.small-inf h2 {
     font-size: 25px;
     margin-bottom: 30px;
   }
+
   section.small-inf .images {
     flex-wrap: wrap;
     justify-content: space-around;
     height: 90%;
   }
-  section.small-inf .images .small-image{
-    width:180px;
+
+  section.small-inf .images .small-image {
+    width: 180px;
     height: 180px;
     margin: 0 10px;
   }
-  section.testimonial{
-    height:140px;
+
+  section.testimonial {
+    height: 140px;
     margin-top: 10px;
   }
-  section.testimonial p{
+
+  section.testimonial p {
     font-size: 18px;
-    padding: 0 30px; 
+    padding: 0 30px;
   }
-  section.testimonial p cite{
+
+  section.testimonial p cite {
     font-size: 13px;
   }
-  section.call-action{
-    flex-basis:95%; 
+
+  section.call-action {
+    flex-basis: 95%;
+  }
+
+  .travel-tips h1 {
+    font-size: 30px;
+  }
+
+  .travel-tips h3 {
+    font-size: 22px;
+  }
+
+  .travel-tips .tips {
+    width: 90%;
+    font-size: 18px;
+
   }
 }
 
-@media(min-width:360px) and (max-width:450px){
-  header .logo{
+@media(min-width:350px) and (max-width:485px) {
+  header .logo {
     font-size: 15px;
   }
-  section.hero .left-container{
+
+  section.hero .left-container {
     padding: 10px 0;
   }
-  section.hero .left-container.about-me{
-   margin-top: 0;
+
+  section.hero .left-container.about-me {
+    margin-top: 0;
   }
-  section.hero .right-container.about-me{
-    height:200px
+
+  section.hero .left-container.travel {
+    align-items: center;
+    margin: 5px;
+    height: 150px
   }
-  section.hero h1{
+
+  section.hero .left-container.travel h3 {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  section.hero .left-container.travel p {
+    font-size: 13px;
+  }
+
+  section.hero .right-container.about-me {
+    height: 200px
+  }
+
+  section.hero .right-container.travel {
+    max-height: 180px
+  }
+
+  section.hero h1 {
     font-size: 25px;
   }
-  section.hero h1.about-me{
-    font-size: 17px;
+
+  section.hero h1.about-me {
+    font-size: 15px;
+    margin-bottom: 10px;
   }
-  section.hero p.about-me{
+
+  section.hero .travel h3 {
+    font-size: 20px;
+  }
+
+  section.hero p.about-me {
     font-size: 12px;
   }
-  header nav ul li a{
+
+  button.about-me {
     font-size: 12px;
-    padding-left: 10px; 
-  } 
-  button.about-me{
+    width: 40px;
+  }
+
+  .signAction {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  header nav ul li a {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
+  button.about-me {
     margin-top: 5px;
+    padding: 4px 10px;
+    width: 80px;
   }
-  section.small-inf{
-  height: 450px;
+
+  section.small-inf {
+    height: 450px;
   }
-  section.small-inf .images .small-image{
-    width:140px;
-    height:140px;
+
+  section.small-inf .images .small-image {
+    width: 140px;
+    height: 140px;
   }
-  section.small-inf .images .small-image.about-me{
-    width:300px;
-    height:150px;
+
+  section.small-inf .images .small-image.about-me {
+    width: 300px;
+    height: 150px;
   }
+
+  section.small-inf.about-me h2 {
+    font-size: 24px;
+  }
+
+  figure.about-me {
+    width: 300px;
+    margin: 5px;
+  }
+
+  figure.about-me h3 {
+    margin: 10px;
+  }
+
   section.testimonial p {
-   padding-top:5px;
-   font-size: 14px;
+    padding-top: 5px;
+    font-size: 14px;
   }
-  section.call-action{
+
+  section.call-action {
     padding: 0 10px;
     margin: 20px 0;
+  }
+
+  .travel-tips h1 {
+    font-size: 22px;
+    margin: 10px 0 0 0;
+  }
+
+  .travel-tips h3 {
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .travel-tips .tips {
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+
   }
 }

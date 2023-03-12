@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=$, initial-scale=1.0">
-  <link rel="stylesheet" href="../style.css">
-  <title>Main CSS Project</title>
-</head>
-<body>
-  <div class="wrapper about-me">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=$, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>About Me</title>
+  </head>
+  <body>
     <header>
       <div class="logo">Mount Me</div>
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="header-link">Travel tips</a></li>
+          <li><a href="./travelTips.html">Travel tips</a></li>
           <li><a href="mailto:zelek.barbara@gmail.com">Contact</a></li>
         </ul>
       </nav>
@@ -22,35 +21,76 @@
     <section class="hero">
       <div class="left-container about-me">
         <h1 class="about-me">Hi, I am Barbara</h1>
-        <p class="about-me">For me hiking is a lifestyle. It means freedom, adventure, inspiration, courage, discovery, connection... so many things! It’s something I can’t run away from. It’s in my soul and one of my main goals in life. Making lifelong memories and getting to know the different cultures and species that shape our world. </p>
-        <p>Do you need some travel tips, sign up!</p>
-        <button class="about-me">Sign up</button>
+        <p class="about-me">For me hiking is a lifestyle. It means freedom, adventure,inspiration, courage, discovery, connection... so many things! It’s something I can’t run away from. It’s in my soul and one of my main goals in life. Making lifelong memories and getting to know the different cultures and species that shape our world.
+        </p>
+        <p class="about-me">Don’t forget to follow me on
+          <a href="https://www.instagram.com" class="instagram">Instagram </a>for seasonal tips and weekend recommendations.
+        </p>
+        <p class="signAction">Do you need some travel tips, sign up!</p>
+        <form action="./signUp.html">
+          <button class="about-me" type="submit">Sign up</button>
+        </form>
       </div>
       <div class="right-container about-me">
-        <img class="main-image about-me" src="../images/about-me-main.jpg" alt="a girl is standing on the top of the mountains">
+        <img 
+          class="main-image about-me"
+          src="../images/about-me-image2.jpg"
+          alt="a girl is standing on the top of the mountains"
+        />
       </div>
-    </section>  
+    </section>
     <section class="small-inf about-me">
-      <h2 class="about-me">My favorite places:</h2>
+      <h2 class="about-me">My favorite places to visit:</h2>
       <div class="images about-me">
-        <figure>
-          <img src="../images/about-me-image1.jpg" alt="girl with the landscape view" class="small-image about-me">
-          <figcaption>Graubünden</figcaption>
+        <figure class="about-me">
+          <img
+            src="../images/about-me-image1.jpg"
+            alt="girl with the landscape view"
+            class="small-image about-me"
+          />
+          <figcaption>
+            <h3>Graubünden</h3>
+            <p> Fascinating panoramic views, peaks and mountain lakes, diverse flora and fauna: the beauties of Graubünden can be experienced particularly intensively while hiking.
+            </p>
+          </figcaption>
         </figure>
-        <figure>
-          <img src="../images/about-me-image2.jpg" alt="a girl is sitting on the small bridge with the mountains view" class="small-image about-me">
-          <figcaption>Radons</figcaption>
+        <figure class="about-me">
+          <img
+            src="../images/about-me-main.jpg"
+            alt="a girl is sitting on the small bridge with the mountains view"
+            class="small-image about-me"
+          />
+          <figcaption>
+            <h3>Orgelspass</h3>
+            <p>The name Orgel Pass refers to the unusual rock formations on the pass, which resemble church organs. Dolomite rock towers up in bizarre formations. Let yourself become enchanted by the organ pipe landscape.
+            </p>
+          </figcaption>
         </figure>
-        <figure>
-          <img src="../images/about-me-image3.jpg" alt="kanton Grindelwald, a girl with warm clothes is standing next to the lake in front of the mountains" class="small-image about-me">
-          <figcaption>Grindelwald</figcaption>
+        <figure class="about-me">
+          <img
+            src="../images/about-me-image3.jpg"
+            alt="kanton Grindelwald, a girl with warm clothes is standing next to the lake in front of the mountains"
+            class="small-image about-me"
+          />
+          <figcaption>
+            <h3>Grindelwald</h3>
+            <p>Deep blue mountain lakes, green alpine meadows, white mountain peaks - a panorama that is second to none. In the Jungfrau Region every hike becomes an unforgettable experience.
+            </p>
+          </figcaption>
         </figure>
-        <figure>
-          <img src="../images/about-me-image4.jpg" alt="a girl is standing at the edge of the mountains with the lake and mountains view" class="small-image about-me">
-          <figcaption>Brienzer Rothorn</figcaption>
+        <figure class="about-me">
+          <img
+            src="../images/about-me-image4.jpg"
+            alt="a girl is standing at the edge of the mountains with the lake and mountains view"
+            class="small-image about-me"
+          />
+          <figcaption>
+            <h3>Brienzer Rothorn</h3>
+            <p>A mountain with amazing views, the Brienzer Rothorn located between the Alps and the Swiss Plateau is beyond compare.
+            </p>
+          </figcaption>
         </figure>
       </div>
     </section>
-  </div>
-</body>
+  </body>
 </html>
